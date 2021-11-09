@@ -18,7 +18,7 @@ public class Ex6 {
         System.out.println("frequency of character a: "+ count);
 
         int index = s1.indexOf("Java");
-// 0 -> s.length()
+
         if (index != -1){
             System.out.println("string contains the word Java");
         }else{
