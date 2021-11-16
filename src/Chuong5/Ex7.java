@@ -105,7 +105,7 @@ class Book{
         author = new Person().inputPerson();
         System.out.println("Enter pages:" );
         pages = scanner.nextInt();
-        System.out.println("Enter price");
+        System.out.println("Enter price: ");
         price = scanner.nextDouble();
 
         Book book = new Book(title, author, pages, price);
