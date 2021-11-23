@@ -1,8 +1,6 @@
 package Chuong6;
 
-import java.lang.reflect.Array;
 import java.util.*;
-import java.util.stream.Stream;
 
 class Pet {
     private String name;
