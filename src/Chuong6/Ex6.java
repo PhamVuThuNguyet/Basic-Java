@@ -70,6 +70,11 @@ class BinaryMessage implements Message{
         return ("Title: " + this.title + "\nMessage Binary: " + this.message +
                 "\nType: " + this.type);
     }
+
+    public void print(){
+        System.out.println("Title: " + this.title + "\nMessage Binary: " + this.message +
+                "\nType: " + this.type);
+    }
 }
 
 public class Ex6 {
@@ -81,5 +86,6 @@ public class Ex6 {
         BinaryMessage binaryMessage = new BinaryMessage("Binary Message Title",
                 "10101010101010000000", "binary");
         System.out.println(binaryMessage.printMessage());
+        binaryMessage.print();
     }
 }
