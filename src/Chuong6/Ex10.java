@@ -3,6 +3,7 @@ package Chuong6;
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 class Person{
     private String name;
@@ -162,9 +163,9 @@ public class Ex10 {
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         Person[] nhansu = new Person[3 + n];
-        GiamDoc giamDoc = new GiamDoc("Giamdoc1", "1/1/1", 1.5, 2);
+        GiamDoc giamDoc = new GiamDoc("Giamdoc1", "1/12/1", 1.5, 2);
         QuanDoc quanDoc1 = new QuanDoc("Quandoc1", "1/1/1", 1.2, 10);
-        QuanDoc quanDoc2 = new QuanDoc("Quandoc2", "1/1/1", 1.1, 7);
+        QuanDoc quanDoc2 = new QuanDoc("Quandoc2", "1/12/1", 1.1, 7);
         nhansu[0] = giamDoc;
         nhansu[1] = quanDoc1;
         nhansu[2] = quanDoc2;
@@ -191,8 +192,15 @@ public class Ex10 {
                 return (int)(tongluong_2 - tongluong_1);
             }
         });
-
         System.out.println(nhansu[0]);
+
+        // dd/mm/yyyy
+
+        // func(Person t){ t.getDOB == "12" }
+        // d/m/y d - m - y
+        // d/m/y d - m - y
+        Arrays.stream(nhansu).filter(t->t.getDOB().split("/")[1].equals("12"))
+                .collect(Collectors.toList()).forEach(System.out::println);
 
     }
 }
