@@ -3,6 +3,9 @@ package Chapter7;
 import java.util.Scanner;
 
 class AgeException extends Exception{
+
+    // public Exception(String message)
+
     public AgeException(String message) {
         super(message);
     }
