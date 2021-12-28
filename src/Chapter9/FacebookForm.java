@@ -55,6 +55,7 @@ public class FacebookForm extends JFrame {
     Connection conn;
     ResultSet rs;
 
+
     public FacebookForm() {
         //tao 1 container de add cac component vao
         // this.getContentPane().;
