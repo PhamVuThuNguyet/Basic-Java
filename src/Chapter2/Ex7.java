@@ -16,7 +16,7 @@ class Cube {
 
 public class Ex7 {
     public static void main(String[] args) {
-        Cube cube = new Cube(2.0f);
-        System.out.println(cube.cubeVolume());
+      //  Cube cube = new Cube(2.0f);
+        //System.out.println(cube.cubeVolume());
     }
 }
